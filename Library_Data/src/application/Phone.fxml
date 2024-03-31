@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="856.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PhoneController">
+   <children>
+      <ImageView fitHeight="135.0" fitWidth="146.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/contact.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TablePhone" layoutX="331.0" layoutY="1.0" prefHeight="650.0" prefWidth="527.0">
+        <columns>
+          <TableColumn fx:id="ID" minWidth="0.0" prefWidth="226.39999389648438" text="Subscriber ID" />
+          <TableColumn fx:id="phone" prefWidth="299.199951171875" text="Phone Num" />
+        </columns>
+      </TableView>
+      <Button fx:id="Back" layoutX="14.0" layoutY="570.0" mnemonicParsing="false" onAction="#back" prefHeight="56.0" prefWidth="79.0">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/back-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="SID" layoutX="13.0" layoutY="209.0" prefHeight="62.0" prefWidth="207.0" promptText="Subscriber ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneN" layoutX="13.0" layoutY="285.0" prefHeight="62.0" prefWidth="207.0" promptText="Phone number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="31.0" layoutY="364.0" mnemonicParsing="false" onAction="#Insert" prefHeight="89.0" prefWidth="145.0" text="Insert">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

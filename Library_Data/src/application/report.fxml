@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReportController">
+   <bottom>
+      <AnchorPane prefHeight="700.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="totalSubscribers" alignment="CENTER" layoutX="280.0" layoutY="68.0" prefHeight="49.0" prefWidth="220.0" style="-fx-border-radius: 50; -fx-border-color: black;" />
+            <Text layoutX="25.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total subscribers">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font></Text>
+            <Label fx:id="BNB" alignment="CENTER" layoutX="766.0" layoutY="181.0" prefHeight="49.0" prefWidth="220.0" style="-fx-border-radius: 50; -fx-border-color: black;" />
+            <Label fx:id="BSN" alignment="CENTER" layoutX="766.0" layoutY="68.0" prefHeight="49.0" prefWidth="220.0" style="-fx-border-radius: 50; -fx-border-color: black;" />
+            <Text layoutX="534.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The number of books borrowed" wrappingWidth="179.44677734375">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font></Text>
+            <Text layoutX="534.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrowed subscribers number" wrappingWidth="219.39111328125">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font></Text>
+            <Text layoutX="43.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Book">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font></Text>
+            <Label fx:id="totalBook" alignment="CENTER" layoutX="280.0" layoutY="157.0" prefHeight="49.0" prefWidth="220.0" style="-fx-border-radius: 50; -fx-border-color: black;" />
+            <PieChart fx:id="AgeGoup" layoutX="25.0" layoutY="297.0" prefHeight="314.0" prefWidth="429.0" title="Borrowing _age group" />
+            <Separator layoutX="25.0" layoutY="285.0" prefHeight="0.0" prefWidth="933.0" />
+            <PieChart fx:id="Gender" layoutX="492.0" layoutY="297.0" prefHeight="311.0" prefWidth="461.0" title="Borrowing _Gender" />
+            <Separator layoutX="462.0" layoutY="288.0" orientation="VERTICAL" prefHeight="412.0" prefWidth="10.0" />
+            <Button fx:id="B" layoutX="872.0" layoutY="611.0" mnemonicParsing="false" onAction="#Back" prefHeight="70.0" prefWidth="110.0">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/back-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="B1" layoutX="14.0" layoutY="618.0" mnemonicParsing="false" onAction="#annual_report" prefHeight="70.0" prefWidth="162.0" text="Annual report">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: Gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="553.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="T_B_id" layoutX="14.0" layoutY="22.0" prefHeight="35.0" prefWidth="180.0" promptText="B_id" />
+            <TextField fx:id="T_B_name" layoutX="14.0" layoutY="74.0" prefHeight="35.0" prefWidth="180.0" promptText="B_name" />
+            <TextField fx:id="T_B_description" layoutX="14.0" layoutY="125.0" prefHeight="35.0" prefWidth="180.0" promptText="B_description" />
+            <TextField fx:id="T_number_of_pages" layoutX="14.0" layoutY="176.0" prefHeight="35.0" prefWidth="180.0" promptText="number_of_pages" />
+            <TextField fx:id="T_year_of_issue" layoutX="14.0" layoutY="233.0" prefHeight="35.0" prefWidth="180.0" promptText="year_of_issue" />
+            <TextField fx:id="T_Sec_id" layoutX="14.0" layoutY="283.0" prefHeight="35.0" prefWidth="180.0" promptText="Sec_id" />
+            <TextField fx:id="TAid1" layoutX="14.0" layoutY="334.0" prefHeight="35.0" prefWidth="180.0" promptText="A_id " />
+            <Button fx:id="Back" layoutX="11.0" layoutY="552.0" mnemonicParsing="false" onAction="#Back" prefHeight="35.0" prefWidth="80.0" />
+            <ImageView fx:id="im2" fitHeight="21.0" fitWidth="39.0" layoutX="30.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/return.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im1" fitHeight="116.0" fitWidth="200.0" layoutX="46.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/book%20(1).png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <TableView fx:id="table_Book" layoutX="245.0" onMouseClicked="#getSelectCell" prefHeight="480.0" prefWidth="555.0">
+        <columns>
+          <TableColumn fx:id="B_id" prefWidth="82.0" text="B_id" />
+          <TableColumn fx:id="B_name" prefWidth="83.0" text="B_name" />
+            <TableColumn fx:id="B_description" prefWidth="82.0" text="B_description" />
+            <TableColumn fx:id="number_of_pages" prefWidth="83.0" text="number_of_pages" />
+            <TableColumn fx:id="year_of_issue" prefWidth="82.0" text="year_of_issue" />
+            <TableColumn fx:id="Sec_id" prefWidth="83.0" text="Sec_id" />
+            <TableColumn fx:id="Aid1" prefWidth="82.0" text="A_id " />
+        </columns>
+      </TableView>
+      <Button fx:id="Delete" layoutX="284.0" layoutY="488.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: darkGray;" text="Delete" />
+      <Button fx:id="Add" layoutX="451.0" layoutY="490.0" mnemonicParsing="false" onAction="#addbook" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: darkGray;" text="Add" />
+      <Button fx:id="Search" layoutX="451.0" layoutY="538.0" mnemonicParsing="false" onAction="#Search" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: darkGray;" text="Search" />
+      <Button fx:id="Update" layoutX="284.0" layoutY="538.0" mnemonicParsing="false" onAction="#UpdateData" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: darkGray;" text="Update" />
+      <ImageView fx:id="im5" fitHeight="35.0" fitWidth="30.0" layoutX="451.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im3" fitHeight="35.0" fitWidth="21.0" layoutX="291.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im6" fitHeight="30.0" fitWidth="21.0" layoutX="456.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/search.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im4" fitHeight="35.0" fitWidth="30.0" layoutX="287.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/browser.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

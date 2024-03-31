@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="653.0" prefWidth="849.0" style="-fx-background-color: darkgray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BorrowController">
+   <children>
+      <TableView fx:id="TableBorrow" layoutX="244.0" layoutY="23.0" prefHeight="391.0" prefWidth="598.0">
+         <columns>
+            <TableColumn fx:id="Col_Bid" prefWidth="119.99998474121094" text="Book ID" />
+            <TableColumn fx:id="Col_Sid" prefWidth="151.20001220703125" text="Subscriber ID" />
+            <TableColumn fx:id="Col_Sdate" prefWidth="181.5999755859375" text="Start Date" />
+            <TableColumn fx:id="Col_Edate" prefWidth="145.60003662109375" text="End Date" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="72.0" fitWidth="83.0" layoutX="196.0" layoutY="472.0" onMouseClicked="#insert" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/book%20(4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="318.0" layoutY="472.0" onMouseClicked="#delete" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/book-with-cross-delete-symbol.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="90.0" layoutX="414.0" layoutY="465.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/book%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="85.0" layoutX="543.0" layoutY="468.0" onMouseClicked="#update" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/updated.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="B" fitHeight="64.0" fitWidth="92.0" layoutX="771.0" layoutY="575.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/back-arrow.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Bid" layoutX="14.0" layoutY="306.0" prefHeight="64.0" prefWidth="186.0" promptText="Book Id">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Sid" layoutX="14.0" layoutY="389.0" prefHeight="64.0" prefWidth="186.0" promptText="Subscriber ID">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="216.0" fitWidth="163.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/borrow%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Report" layoutX="13.0" layoutY="478.0" mnemonicParsing="false" onAction="#OnActionReport" prefHeight="55.0" prefWidth="72.0">
+         <graphic>
+            <ImageView fitHeight="104.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/report%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

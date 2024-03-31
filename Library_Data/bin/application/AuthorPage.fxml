@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="735.0" style="-fx-background-color: darkgray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AuthorPageController">
+   <children>
+      <TableView fx:id="AuthorTable" layoutX="137.0" layoutY="40.0" prefHeight="200.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="AId_Col" prefWidth="268.80003356933594" text="Author ID" />
+          <TableColumn fx:id="AName_Col" prefWidth="249.5999755859375" text="Author Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="71.0" layoutY="278.0" prefHeight="34.0" prefWidth="150.0" text="Add New Author" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="369.0" text="Update Author Info">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="10.0" layoutY="361.0" onMouseClicked="#UpadteAuthor" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/refresh.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="91.0" layoutY="469.0" prefHeight="18.0" prefWidth="140.0" text="Delete Author">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="58.0" layoutX="24.0" layoutY="461.0" onMouseClicked="#DeleteAuthor" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="95.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/writer%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="48.0" layoutX="10.0" layoutY="279.0" onMouseClicked="#addAuthor" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/add-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="B1" fitHeight="46.0" fitWidth="58.0" layoutX="655.0" layoutY="525.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+         <image>
+            <Image url="@../../../../../../Downloads/back-arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="IDTextAdd" layoutX="67.0" layoutY="315.0" prefHeight="26.0" prefWidth="187.0" promptText="Enter Id" style="-fx-background-color: white;" />
+      <TextField fx:id="NameTextAdd" layoutX="276.0" layoutY="315.0" prefHeight="26.0" prefWidth="187.0" promptText="Enter Name" style="-fx-background-color: white;" />
+      <TextField fx:id="IDTextUp" layoutX="276.0" layoutY="365.0" prefHeight="26.0" prefWidth="187.0" promptText="Enter Id" style="-fx-background-color: white;" />
+      <TextField fx:id="NameTextUp" layoutX="276.0" layoutY="404.0" prefHeight="26.0" prefWidth="187.0" promptText="Enter Name" style="-fx-background-color: white;" />
+      <TextField fx:id="IDTextDel" layoutX="276.0" layoutY="465.0" prefHeight="26.0" prefWidth="187.0" promptText="Enter Id" style="-fx-background-color: white;" />
+      <TextField fx:id="IdtEXTScerch" layoutX="274.0" layoutY="535.0" prefHeight="26.0" prefWidth="187.0" promptText="Enter Id" style="-fx-background-color: white;" />
+      <Label layoutX="84.0" layoutY="539.0" prefHeight="18.0" prefWidth="122.0" text="Search by Id">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="24.0" layoutY="531.0" onMouseClicked="#Search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/search%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="624.0" prefWidth="863.0" style="-fx-background-color: darkgray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.secPageController">
+   <children>
+      <TableView fx:id="SectionTabel" layoutX="129.0" layoutY="24.0" prefHeight="290.0" prefWidth="621.0">
+         <columns>
+            <TableColumn fx:id="sceId" prefWidth="304.80001068115234" text="Section Id" />
+            <TableColumn fx:id="secName" prefWidth="317.6000671386719" text="Section Name" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="84.0" fitWidth="85.0" layoutX="27.0" layoutY="24.0" onMousePressed="#addSec" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/chapter%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="73.0" layoutY="351.0" onMousePressed="#addSec" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../add%20(3).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="360.0" text="Add New Section">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idAddText" layoutX="280.0" layoutY="356.0" prefHeight="26.0" prefWidth="199.0" promptText="Enter Id" />
+      <TextField fx:id="NameAddText" layoutX="280.0" layoutY="396.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter Name" />
+      <ImageView fitHeight="58.0" fitWidth="52.0" layoutX="73.0" layoutY="462.0" onMousePressed="#updateSce" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/refresh.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="148.0" layoutY="471.0" text="Update Section">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateTextId" layoutX="273.0" layoutY="467.0" prefHeight="26.0" prefWidth="199.0" promptText="Enter Id" />
+      <TextField fx:id="updateTextName" layoutX="273.0" layoutY="506.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter New Name" />
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="500.0" layoutY="357.0" onMousePressed="#DeleteSec" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/delete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="552.0" layoutY="369.0" prefHeight="18.0" prefWidth="130.0" text="Delete Section">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IddelText" layoutX="675.0" layoutY="365.0" prefHeight="26.0" prefWidth="174.0" promptText="Enter Section Id" />
+      <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="511.0" layoutY="453.0" onMousePressed="#SearchSec" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/book%20(3).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="567.0" layoutY="462.0" text="Search By:">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchId" layoutX="663.0" layoutY="506.0" promptText="Enter ID" />
+      <Line endX="155.0" endY="5.999969482421875" layoutX="344.0" layoutY="435.0" startX="-97.80001831054688" startY="5.999969482421875" />
+      <Line endX="155.0" endY="5.999969482421875" layoutX="681.0" layoutY="435.0" startX="-97.80001831054688" startY="5.999969482421875" />
+      <ImageView fx:id="B1" fitHeight="58.0" fitWidth="66.0" layoutX="798.0" layoutY="566.0" onMousePressed="#back" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+         <image>
+            <Image url="@../../../../../../Downloads/back-arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="552.0" layoutY="509.0" text="Section Id:">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="540.0" text="Section Name">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchName" layoutX="663.0" layoutY="537.0" promptText="Enter Name" />
+   </children>
+</AnchorPane>
